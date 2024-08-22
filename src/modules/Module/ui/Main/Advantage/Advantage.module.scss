@@ -1,0 +1,19 @@
+@import url("../../../../../shared/constants.scss");
+.advantage-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 21px;
+  cursor: pointer;
+  .advantage-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #bdbdbd;
+    transition: var(--transition);
+    width: 210px;
+  }
+  .advantage-title_active {
+    color: var(--primaryColor);
+    transition: var(--transition);
+  }
+}

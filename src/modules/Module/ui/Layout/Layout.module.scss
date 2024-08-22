@@ -1,0 +1,18 @@
+.layout_outside_wrapper {
+  // width: 100vw;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .wrapper {
+    width: 100%;
+    max-width: 1600px;
+    // background: linear-gradient(to right, #252525, #3a3a3a);
+    background-image: url("./assets/bg.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

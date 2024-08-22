@@ -1,0 +1,50 @@
+@import url("../../../../../shared/constants.scss");
+
+.Disassemble-wrapper {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .DisassembleIntoSpareParts {
+    width: 570px;
+    height: 212px;
+    border-radius: var(--borderRadius);
+    flex-shrink: 0;
+    background: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    // justify-content: space-between;
+    padding: 29px 41px 12px;
+    background-image: url("./assets/mb.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+    .DisassembleIntoSpareParts-title {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .DisassembleIntoSpareParts-description {
+      width: 359px;
+      height: 44px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .DisassembleIntoSpareParts-btn {
+      margin-top: 8px;
+      background-color: transparent;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      color: var(--primaryColor);
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      gap: 20px;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import url("../../../../../shared/constants.scss");
+
+.ChoseModelList-external-wrapper {
+  width: var(--containerWidth);
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  margin-top: 98px;
+  .ChoseModelList-main-title {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+  }
+  .ChoseModelList-title {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: end;
+    width: 332px;
+  }
+  .ChoseModelList-wrapper {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: var(--containerWidth);
+    flex-wrap: wrap;
+    gap: 29px;
+  }
+  .btn-container {
+    margin-top: 50px;
+    width: 284px;
+  }
+}

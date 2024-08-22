@@ -1,0 +1,45 @@
+@import url("../../../../shared/constants.scss");
+
+.header-wrapper {
+  width: var(--containerWidth);
+  height: 100%;
+  padding-top: 27px;
+  padding-bottom: 67px;
+  display: grid;
+  grid-template-columns: 264px 380px 1fr 230px;
+}
+.logo {
+  padding-top: 5px;
+}
+.button-wrapper {
+  width: 230px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+  li {
+    list-style: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.phone-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .phone {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    color: #ffffff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

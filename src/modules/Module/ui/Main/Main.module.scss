@@ -1,0 +1,8 @@
+@import url("../../../../shared/constants.scss");
+.wrapper {
+  width: var(--containerWidth);
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

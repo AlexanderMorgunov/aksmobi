@@ -1,0 +1,21 @@
+@import url("../../../../../shared/constants.scss");
+
+.advantages-external-wrapper {
+  width: 1600px;
+  max-width: 98vw;
+  height: 111px;
+  background: linear-gradient(94deg, #292929 49%, #3c3c3c 98.16%);
+  box-shadow: 0px 0px 60px 0px rgba(6, 6, 12, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 75px;
+
+  .advantages-content-wrapper {
+    width: var(--containerWidth);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-right: 95px;
+  }
+}

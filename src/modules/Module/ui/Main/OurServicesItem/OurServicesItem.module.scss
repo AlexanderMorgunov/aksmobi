@@ -1,0 +1,46 @@
+@import url("../../../../../shared/constants.scss");
+
+.OurServicesItem-wrapper {
+  width: 270px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: var(--borderRadius);
+  background: #1e1e1e;
+  color: var(--gray);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 20px 33px 21px;
+  cursor: pointer;
+  transition: var(--transition);
+  &_active {
+    color: var(--primaryColor);
+    transition: var(--transition);
+  }
+  .OurServicesItem-title {
+    width: 200px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .OurServicesItem-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    > .OurServicesItem-period {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    > .OurServicesItem-price {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}

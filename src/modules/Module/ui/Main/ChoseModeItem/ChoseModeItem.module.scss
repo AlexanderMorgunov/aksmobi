@@ -1,0 +1,33 @@
+@import url("../../../../../shared/constants.scss");
+
+.ChoseModeItem-wrapper {
+  width: 270px;
+  height: 300px;
+  border-radius: var(--borderRadius);
+  background: #1e1e1e;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  padding: 31px 20px;
+  gap: 40px;
+  cursor: pointer;
+
+  .ChoseModeItem-title {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    transition: var(--transition);
+    &_active {
+      color: var(--primaryColor);
+      transition: var(--transition);
+    }
+  }
+  .ChoseModeItem-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

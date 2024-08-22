@@ -1,0 +1,29 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .banner-content {
+    color: #ffffff;
+    .banner-title {
+      font-weight: bold;
+      font-size: 52px;
+      padding-bottom: 20px;
+      span {
+        color: var(--primaryColor);
+      }
+    }
+    .banner-body {
+      font-size: 24px;
+      .banner-body-text {
+        padding-bottom: 40px;
+      }
+      .banner-body-btn-container {
+        width: 284px;
+      }
+    }
+  }
+  .banner-img {
+    width: 576px;
+    height: 426px;
+  }
+}

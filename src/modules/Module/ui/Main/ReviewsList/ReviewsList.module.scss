@@ -1,0 +1,60 @@
+.Reviews-external-wrapper {
+  margin-top: 99px;
+  margin-bottom: -2px;
+  width: 1601px;
+  height: 464px;
+  background: linear-gradient(94deg, #292929 49%, #444 98.16%);
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .Reviews-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .Reviews-title {
+      width: 195px;
+      height: 63px;
+      color: #fff;
+      text-align: center;
+      font-size: 46px;
+      font-weight: 700;
+    }
+    .Reviews-carousel-wrapper {
+      margin-top: 40px;
+      position: relative;
+      .Reviews-carousel {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+      .arrow-wrapper-left {
+        width: 49px;
+        height: 34px;
+        border-radius: 30px;
+        background: #1e1e1e;
+        position: absolute;
+        top: 86px;
+        left: -80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .arrow-wrapper-right {
+        width: 49px;
+        height: 34px;
+        border-radius: 30px;
+        background: #1e1e1e;
+        position: absolute;
+        top: 86px;
+        right: -80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+  }
+}

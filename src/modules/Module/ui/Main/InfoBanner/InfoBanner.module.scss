@@ -1,0 +1,70 @@
+@import url("../../../../../shared/constants.scss");
+
+.InfoBanner-external-wrapper {
+  margin-top: 100px;
+  width: 99vw;
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(94deg, #292929 49%, #444 98.16%);
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.45);
+  .InfoBanner-wrapper {
+    width: var(--containerWidth);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 428px;
+    flex-shrink: 0;
+    .InfoBanner-text {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 855px;
+      height: 192px;
+      color: var(--gray);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 170%;
+      gap: 16px;
+      .InfoBanner-column {
+        width: 3px;
+        height: 192px;
+        background-color: var(--gray);
+      }
+    }
+    .quantityPhonesRepaired-wrapper {
+      width: 216px;
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .quantityPhonesRepaired-circle {
+        width: 210px;
+        height: 210px;
+        background-color: transparent;
+        border-radius: 100%;
+        border: 20px solid var(--primaryColor);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        filter: drop-shadow(0px 0px 40px rgba(254, 100, 15, 0.4));
+        .quantityPhonesRepaired-number {
+          text-align: center;
+          text-shadow: 0px 0px 10px rgba(137, 222, 63, 0.25);
+          font-size: 46px;
+          font-weight: 700;
+          line-height: 46px;
+          color: var(--primaryColor);
+        }
+      }
+      .quantityPhonesRepaired-text {
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
+}

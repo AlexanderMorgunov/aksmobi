@@ -19,6 +19,10 @@ import { OurServicesList } from "./OurServicesList/OurServicesList";
 import { OurServicesItem } from "./OurServicesItem/OurServicesItem";
 import { DisassembleBanners } from "./DisassembleBanners/DisassembleBanners";
 import { BuySparePartsOnlineBanner } from "./BuySparePartsOnlineBanner/BuySparePartsOnlineBanner";
+import { InfoBanner } from "./InfoBanner/InfoBanner";
+import { ReviewsList } from "./ReviewsList/ReviewsList";
+import { ReviewItem } from "./ReviewItem/ReviewItem";
+import { DocumentForm } from "./DocumentForm/DocumentForm";
 
 const Main = () => {
   const [activeAdvantage, setActiveAdvantage] = useState(0);
@@ -109,6 +113,24 @@ with new parts"
     price: "1 000 - 3 000 ₽",
   }));
 
+  const reviewsData = [
+    {
+      id: 0,
+      name: "Владимир",
+      text: "Чинят не только мобильную технику, что очень порадовало! Перепаяли порт на midi-контроллере, все качественно и быстро! Очень выручили :)",
+    },
+    {
+      id: 1,
+      name: "Константин",
+      text: "Сломалось гнездо зарядки у планшета. В других мастерских просили несколько тысяч за полную замену детали, а местный мастер смог перепаять и теперь все работает.",
+    },
+    {
+      id: 2,
+      name: "Артём",
+      text: "Узнал что почти все сервисы покупают тут запчасти для ремонта и решил обратиться напрямую за запчастью и ремонтом. Вышло ДЕШЕВО!!",
+    },
+  ];
+
   return (
     <div className={styles["wrapper"]}>
       <Banner />
@@ -161,6 +183,26 @@ with new parts"
       </OurServicesList>
       <DisassembleBanners />
       <BuySparePartsOnlineBanner />
+      <InfoBanner repairPhonesNumber={1500} />
+      {/* <PickUpBrokenPhone /> */}
+      <DocumentForm
+        title="Заберем ваш сломанный смартфон прямо из дома"
+        description={
+          <>
+            Оставьте Ваш номер телефона и мы перезвоним Вам
+            <strong> прямо сейчас</strong>
+          </>
+        }
+      />
+      <ReviewsList>
+        {reviewsData.map((item) => (
+          <ReviewItem key={item.id} name={item.name} text={item.text} />
+        ))}
+      </ReviewsList>
+      <DocumentForm
+        title="Нужна консультация?"
+        description="Оставьте Ваш номер телефона и запишем вас на бесплатную консультацию."
+      />
     </div>
   );
 };

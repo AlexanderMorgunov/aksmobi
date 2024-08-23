@@ -1,0 +1,40 @@
+@import "../../../../../shared/constants.scss";
+
+.ReviewItem-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 370px;
+  height: 221px;
+  border-radius: var(--borderRadius);
+  background: #1e1e1e;
+  padding: 20px 30px;
+
+  .ReviewItem-title {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+
+    .ReviewItem-title-userIcon {
+      width: 55px;
+      height: 55px;
+      border-radius: 30px;
+      background: #292929;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .ReviewItem-text {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    height: 110px;
+  }
+}

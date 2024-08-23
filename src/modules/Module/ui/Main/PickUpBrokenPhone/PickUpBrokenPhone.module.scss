@@ -1,0 +1,35 @@
+.PickUpBrokenPhone-wrapper {
+  margin-top: 100px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  .PickUpBrokenPhone-title {
+    height: 126px;
+    width: 900px;
+    color: #fff;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+  }
+  .PickUpBrokenPhone-description {
+    height: 66px;
+    width: 587px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    .PickUpBrokenPhone-description-bold {
+      font-weight: 700;
+    }
+  }
+  form {
+    margin-top: 20px;
+    width: 992px;
+    display: grid;
+    grid-template-columns: 304px 312px 284px;
+    justify-content: space-evenly;
+    gap: 28px;
+  }
+}

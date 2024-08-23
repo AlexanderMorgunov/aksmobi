@@ -1,0 +1,11 @@
+.UiLink {
+  display: flex;
+  flex-direction: row;
+  color: var(--primaryColor);
+  font-weight: 700;
+  cursor: pointer;
+  gap: 18px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+}

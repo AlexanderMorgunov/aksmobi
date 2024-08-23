@@ -1,0 +1,80 @@
+@import url("../../../../../shared/constants.scss");
+
+.Disassemble-wrapper {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .DisassembleIntoSpareParts {
+    width: 570px;
+    height: 212px;
+    border-radius: var(--borderRadius);
+    background: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    // justify-content: space-between;
+    padding: 29px 41px 12px;
+    background-image: url("./assets/mb.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+    .DisassembleIntoSpareParts-description {
+      width: 359px;
+      height: 44px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
+.DisassembleBanner-link {
+  display: flex;
+  flex-direction: row;
+  color: var(--primaryColor);
+  font-weight: 700;
+  cursor: pointer;
+  gap: 20px;
+  align-items: center;
+  text-decoration: none;
+}
+.DisassembleBanner-link-IntoSpareParts {
+  font-size: 18px;
+  margin-top: 8px;
+  gap: 20px;
+}
+.DisassembleBanner-link-SeePrices {
+  margin-top: 52px;
+  gap: 15px;
+  > span {
+    font-size: 24px;
+  }
+}
+.DisassembleBanner-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.DisassembleSeePrices-wrapper {
+  display: flex;
+  align-items: flex-start;
+  overflow: visible;
+  .DisassembleSeePrices {
+    width: 570px;
+    height: 212px;
+    border-radius: var(--borderRadius);
+    background: #1e1e1e;
+    gap: 21px;
+    flex-direction: column;
+    padding: 29px 41px 12px;
+    position: relative;
+  }
+  .imageContainer {
+    position: absolute;
+    width: 375px;
+    height: 266px;
+    z-index: 10;
+    right: 302px;
+  }
+}

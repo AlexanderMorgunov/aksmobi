@@ -17,7 +17,8 @@ import { ChoseModeItem } from "./ChoseModeItem/ChoseModeItem";
 import { ChoseModelList } from "./ChoseModelList/ChoseModelList";
 import { OurServicesList } from "./OurServicesList/OurServicesList";
 import { OurServicesItem } from "./OurServicesItem/OurServicesItem";
-import { Disassemble } from "./Disassemble/Disassemble";
+import { DisassembleBanners } from "./DisassembleBanners/DisassembleBanners";
+import { BuySparePartsOnlineBanner } from "./BuySparePartsOnlineBanner/BuySparePartsOnlineBanner";
 
 const Main = () => {
   const [activeAdvantage, setActiveAdvantage] = useState(0);
@@ -158,7 +159,8 @@ with new parts"
           />
         ))}
       </OurServicesList>
-      <Disassemble />
+      <DisassembleBanners />
+      <BuySparePartsOnlineBanner />
     </div>
   );
 };

@@ -1,0 +1,25 @@
+@import url("../../../../../shared/constants.scss");
+
+.BuySparePartsOnlineBanner {
+  margin-top: 43px;
+  background: #1e1e1e;
+  background-image: url("./assets/BuySparePartsOnlineBannerBackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1170px;
+  height: 190px;
+  border-radius: var(--borderRadius);
+  display: grid;
+  grid-template-rows: 1.27fr 1fr 1.42fr;
+  padding: 29px 41px 16px;
+  .BuySparePartsOnlineBanner-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .BuySparePartsOnlineBanner-description {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

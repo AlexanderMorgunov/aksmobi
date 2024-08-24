@@ -11,7 +11,12 @@ const UiButton: FC<IProps> = ({ variant, classNames, ...props }) => {
   return (
     <button
       {...props}
-      className={clsx(styles["btn"], styles[variant], classNames)}
+      className={clsx(
+        styles["btn"],
+        styles[variant],
+        props.className,
+        classNames
+      )}
     ></button>
   );
 };

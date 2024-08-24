@@ -1,0 +1,19 @@
+@import url("../../../../../shared/constants.scss");
+
+.disclaimer-external-wrapper {
+  width: 1600px;
+  max-width: 98vw;
+  height: 220px;
+  background: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  margin-top: 102px;
+  .disclaimer-wrapper {
+    width: var(--containerWidth);
+    color: var(--gray);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 170%;
+    padding: 40px 0px;
+  }
+}

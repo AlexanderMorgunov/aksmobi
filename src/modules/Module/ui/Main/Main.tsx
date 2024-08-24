@@ -23,6 +23,8 @@ import { InfoBanner } from "./InfoBanner/InfoBanner";
 import { ReviewsList } from "./ReviewsList/ReviewsList";
 import { ReviewItem } from "./ReviewItem/ReviewItem";
 import { DocumentForm } from "./DocumentForm/DocumentForm";
+import { Disclaimer } from "./Disclaimer/Disclaimer";
+import { Footer } from "../Footer/Footer";
 
 const Main = () => {
   const [activeAdvantage, setActiveAdvantage] = useState(0);
@@ -203,6 +205,8 @@ with new parts"
         title="Нужна консультация?"
         description="Оставьте Ваш номер телефона и запишем вас на бесплатную консультацию."
       />
+      <Disclaimer />
+      <Footer />
     </div>
   );
 };

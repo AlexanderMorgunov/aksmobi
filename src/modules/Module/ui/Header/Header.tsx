@@ -1,6 +1,6 @@
 import { UiButton } from "../../../../shared/ui/UiButton/UiButton";
 import styles from "./Header.module.scss";
-import logoImgSrc from "./assets/logo.svg";
+import logoImgSrc from "./../../../../shared/assets/logo.svg";
 
 const Header = () => {
   return (

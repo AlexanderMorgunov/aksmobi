@@ -1,0 +1,36 @@
+@import url("./../../../../../shared/constants.scss");
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  margin-top: 30px;
+  width: 348px;
+}
+.service-title {
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+.service-description {
+  width: 470px;
+  height: 73px;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.8px;
+  padding: 16px 49px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}

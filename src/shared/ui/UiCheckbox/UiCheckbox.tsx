@@ -1,25 +1,50 @@
+// import { FC } from "react";
+// import styles from "./UiCheckbox.module.scss";
+
+// interface IProps extends React.InputHTMLAttributes<HTMLInputElement> {
+//   label: string;
+//   onChange: () => void;
+//   checked: boolean;
+// }
+// const UiCheckbox: FC<IProps> = ({ label, onChange, checked, ...props }) => {
+//   return (
+//     <label className={styles["UiCheckbox-label"]}>
+//       <input
+//         type="checkbox"
+//         {...props}
+//         id={label}
+//         checked={checked}
+//         onChange={onChange}
+//       />
+//       {label}
+//     </label>
+//   );
+// };
+
+// export { UiCheckbox };
+
 import { FC } from "react";
 import styles from "./UiCheckbox.module.scss";
-import { CheckMark } from "../../CheckMark";
 
 interface IProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
   onChange: () => void;
   checked: boolean;
 }
+
 const UiCheckbox: FC<IProps> = ({ label, onChange, checked, ...props }) => {
   return (
-    <div className={styles["UiCheckbox-wrapper"]} onClick={() => onChange()}>
-      <div className={styles["UiCheckbox"]}>
-        <input type="checkbox" {...props} id={label} />
-        {checked && (
-          <span>
-            <CheckMark />
-          </span>
-        )}
-      </div>
-      <div className={styles["UiCheckbox-label"]}>{label}</div>
-    </div>
+    <label className={styles["UiCheckbox-label"]}>
+      <input
+        type="checkbox"
+        {...props}
+        id={label}
+        checked={checked}
+        onChange={onChange}
+      />
+      <span className={styles.checkbox}></span>
+      <span className={styles["UiCheckbox-label-text"]}>{label}</span>
+    </label>
   );
 };
 

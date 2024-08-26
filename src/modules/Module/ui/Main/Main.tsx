@@ -25,11 +25,14 @@ import { ReviewItem } from "./ReviewItem/ReviewItem";
 import { DocumentForm } from "./DocumentForm/DocumentForm";
 import { Disclaimer } from "./Disclaimer/Disclaimer";
 import { Footer } from "../Footer/Footer";
+import { IOurServicesItemData } from "../../../../shared/types/IOurServicesItemData";
 const Main = () => {
   const [activeAdvantage, setActiveAdvantage] = useState(0);
   const [activeHowWeWorksItem, setActiveHowWeWorksItem] = useState(1);
   const [activeChoseModeItem, setActiveChoseModeItem] = useState(0);
-  const [activeOurServicesItem, setActiveOurServicesItem] = useState(0);
+  const [activeOurServicesItem, setActiveOurServicesItem] =
+    useState<IOurServicesItemData | null>(null);
+  const [isOpenModalOurServices, setIsOpenModalOurServices] = useState(false);
 
   const advantages = [
     {
@@ -106,7 +109,9 @@ with new parts"
     model: `20 Pro 8/256Gb Phantom Blue`,
   }));
 
-  const OurServicesListData = Array.from({ length: 10 }).map((_, index) => ({
+  const OurServicesListData: IOurServicesItemData[] = Array.from({
+    length: 10,
+  }).map((_, index) => ({
     id: index,
     title:
       index === 0 ? "Замена light сенсора на телефоне" : "Замена light сенсора",
@@ -155,7 +160,9 @@ with new parts"
             description={item.description}
             number={item.id}
             isActive={activeHowWeWorksItem === item.id}
-            onClick={() => setActiveHowWeWorksItem(item.id)}
+            onClick={() => {
+              setActiveHowWeWorksItem(item.id);
+            }}
           />
         ))}
       </HowWeWorks>
@@ -170,15 +177,22 @@ with new parts"
           />
         ))}
       </ChoseModelList>
-      <OurServicesList>
+      <OurServicesList
+        activeServicesItem={activeOurServicesItem}
+        isOpenModal={isOpenModalOurServices}
+        setIsOpenModal={setIsOpenModalOurServices}
+      >
         {OurServicesListData.map((item) => (
           <OurServicesItem
             key={item.id}
             service={item.title}
             period={item.period}
             price={item.price}
-            isActive={activeOurServicesItem === item.id}
-            onClick={() => setActiveOurServicesItem(item.id)}
+            isActive={activeOurServicesItem?.id === item.id}
+            onClick={() => {
+              setActiveOurServicesItem(item);
+              setIsOpenModalOurServices(true);
+            }}
           />
         ))}
       </OurServicesList>

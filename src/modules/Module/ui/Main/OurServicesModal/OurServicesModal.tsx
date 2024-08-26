@@ -3,17 +3,21 @@ import { UiFormModal } from "../../../../../shared/ui/UiFormModal/UiFormModal";
 import { UiInputModal } from "../../../../../shared/ui/UiInputModal/UiInputModal";
 import { UiCheckbox } from "../../../../../shared/ui/UiCheckbox/UiCheckbox";
 import { UiButton } from "../../../../../shared/ui/UiButton/UiButton";
-import styles from "./OrderRepairModal.module.scss";
+import styles from "./OurServicesModal.module.scss";
 
 interface IProps {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+  serviceDescription: string;
 }
 
-const OrderRepairModal: FC<IProps> = ({ setIsOpen, handleSubmit }) => {
+const OurServicesModal: FC<IProps> = ({
+  setIsOpen,
+  handleSubmit,
+  serviceDescription,
+}) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [comment, setComment] = useState("");
   const [checked, setChecked] = useState(false);
 
   return (
@@ -31,12 +35,8 @@ const OrderRepairModal: FC<IProps> = ({ setIsOpen, handleSubmit }) => {
         onChange={(e) => setPhone(e.target.value)}
         required
       />
-      <UiInputModal
-        title="КОММЕНТАРИЙ (НЕОБЯЗАТЕЛЬНО):"
-        placeholder="Введите ваши пожелания"
-        value={comment}
-        onChange={(e) => setComment(e.target.value)}
-      />
+      <div className={styles["service-title"]}>Услуга:</div>
+      <div className={styles["service-description"]}>{serviceDescription}</div>
       <UiCheckbox
         checked={checked}
         onChange={() => setChecked(!checked)}
@@ -52,4 +52,4 @@ const OrderRepairModal: FC<IProps> = ({ setIsOpen, handleSubmit }) => {
   );
 };
 
-export { OrderRepairModal };
+export { OurServicesModal };

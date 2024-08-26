@@ -3,18 +3,76 @@ import { UiFormModal } from "../../../../../shared/ui/UiFormModal/UiFormModal";
 import { UiInputModal } from "../../../../../shared/ui/UiInputModal/UiInputModal";
 import { UiCheckbox } from "../../../../../shared/ui/UiCheckbox/UiCheckbox";
 import { UiButton } from "../../../../../shared/ui/UiButton/UiButton";
-import styles from "./OrderRepairModal.module.scss";
+import styles from "./DisassembleModal.module.scss";
+import { UiSelect } from "../../../../../shared/ui/UiSelect/UiSelect";
+import { ISelectOptions } from "../../../../../shared/types/IselectOptions";
 
 interface IProps {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
 }
 
-const OrderRepairModal: FC<IProps> = ({ setIsOpen, handleSubmit }) => {
+const DisassembleModal: FC<IProps> = ({ setIsOpen, handleSubmit }) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [comment, setComment] = useState("");
   const [checked, setChecked] = useState(false);
+
+  const optionTechnic: ISelectOptions[] = [
+    {
+      id: 0,
+      title: "Ноутбук",
+    },
+    {
+      id: 1,
+      title: "Планшет",
+    },
+    {
+      id: 2,
+      title: "Смартфон",
+    },
+  ];
+
+  const optionBrand: ISelectOptions[] = [
+    {
+      id: 0,
+      title: "Apple",
+    },
+    {
+      id: 1,
+      title: "Samsung",
+    },
+    {
+      id: 2,
+      title: "Xiaomi",
+    },
+  ];
+
+  const optionModels: ISelectOptions[] = [
+    {
+      id: 0,
+      title: "Iphone 13",
+    },
+    {
+      id: 1,
+      title: "Iphone 12",
+    },
+    {
+      id: 2,
+      title: "Iphone 11",
+    },
+    {
+      id: 3,
+      title: "S22",
+    },
+    {
+      id: 4,
+      title: "S21",
+    },
+    {
+      id: 5,
+      title: "S20",
+    },
+  ];
 
   return (
     <UiFormModal setIsOpen={setIsOpen} onSubmit={handleSubmit}>
@@ -31,12 +89,11 @@ const OrderRepairModal: FC<IProps> = ({ setIsOpen, handleSubmit }) => {
         onChange={(e) => setPhone(e.target.value)}
         required
       />
-      <UiInputModal
-        title="КОММЕНТАРИЙ (НЕОБЯЗАТЕЛЬНО):"
-        placeholder="Введите ваши пожелания"
-        value={comment}
-        onChange={(e) => setComment(e.target.value)}
-      />
+      <UiSelect label="ТЕХНИКА" selectOptions={optionTechnic} />
+      <div className={styles["select-wrapper"]}>
+        <UiSelect label="БРЕНД" selectOptions={optionBrand} />
+        <UiSelect label="МОДЕЛЬ" selectOptions={optionModels} />
+      </div>
       <UiCheckbox
         checked={checked}
         onChange={() => setChecked(!checked)}
@@ -52,4 +109,4 @@ const OrderRepairModal: FC<IProps> = ({ setIsOpen, handleSubmit }) => {
   );
 };
 
-export { OrderRepairModal };
+export { DisassembleModal };

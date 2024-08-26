@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import styles from "./PickUpBrokenPhone.module.scss";
 import { UiButton } from "../../../../../shared/ui/UiButton/UiButton";
-import { UiInputDocument } from "../../../../../shared/ui/UiButton/UiInputDocument/UiInputDocument";
+import { UiInputDocument } from "../../../../../shared/ui/UiInputDocument/UiInputDocument";
 // import { UiInputDocument } from "../../../../../shared/ui/UiButton/UiInputDocument/UiInputDocument";
 
 type IProps = React.HTMLAttributes<HTMLFormElement>;

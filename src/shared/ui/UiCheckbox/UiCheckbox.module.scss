@@ -1,0 +1,35 @@
+@import url("../../constants.scss");
+
+.UiCheckbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  cursor: pointer;
+  .UiCheckbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 0.5px solid var(--primaryColor);
+    position: relative;
+    > input {
+      opacity: 0;
+    }
+    span {
+      position: absolute;
+      top: -7px;
+    }
+  }
+  .UiCheckbox-label {
+    max-width: 327px;
+    color: var(--gray);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+    opacity: 0.7;
+    text-decoration-line: underline;
+  }
+}

@@ -1,0 +1,38 @@
+@import "../../../shared/constants.scss";
+.UiFormModal {
+  width: 470px;
+  .UiFormModal-heder {
+    height: 136px;
+    border-radius: 15px 15px 0px 0px;
+    flex-shrink: 0;
+    border-radius: 15px 15px 0px 0px;
+    background: var(--primaryColor);
+    box-shadow: 0px 4px 15px 0px rgba(108, 216, 62, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .UiFormModal-heder-text {
+      display: flex;
+      width: 249px;
+      height: 99px;
+      color: #1e1e1e;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .UiFormModal-heder-cross {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+    }
+  }
+  .UiFormModal-form {
+    border-radius: 0px 0px 15px 15px;
+    padding: 30px 50px;
+    background: linear-gradient(94deg, #292929 49%, #3c3c3c 98.16%);
+  }
+}

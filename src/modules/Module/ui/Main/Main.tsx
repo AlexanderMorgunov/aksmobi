@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Advantage } from "./Advantage/Advantage";
 import { Advantages } from "./Advantages/Advantages";
-import { Banner } from "./Banner/Banner";
+import { OrderRepair } from "./OrderRepair/OrderRepair";
 import styles from "./Main.module.scss";
 import { SettingsIcon } from "./SettingsIcon";
 import { PriceIcon } from "./PriceIcon";
@@ -25,7 +25,6 @@ import { ReviewItem } from "./ReviewItem/ReviewItem";
 import { DocumentForm } from "./DocumentForm/DocumentForm";
 import { Disclaimer } from "./Disclaimer/Disclaimer";
 import { Footer } from "../Footer/Footer";
-
 const Main = () => {
   const [activeAdvantage, setActiveAdvantage] = useState(0);
   const [activeHowWeWorksItem, setActiveHowWeWorksItem] = useState(1);
@@ -135,7 +134,7 @@ with new parts"
 
   return (
     <div className={styles["wrapper"]}>
-      <Banner />
+      <OrderRepair />
       <Advantages>
         {advantages.map((advantage) => (
           <Advantage

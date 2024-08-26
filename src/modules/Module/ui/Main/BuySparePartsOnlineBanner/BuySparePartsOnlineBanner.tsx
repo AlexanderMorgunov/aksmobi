@@ -1,4 +1,4 @@
-import { UiLink } from "../../../../../shared/ui/UiButton/UiLink/UiLink";
+import { UiLink } from "../../../../../shared/ui/UiLink/UiLink";
 import { ArrowRightIcon } from "../ArrowRightIcon";
 import styles from "./BuySparePartsOnlineBanner.module.scss";
 

@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 import { UiButton } from "../../../../../shared/ui/UiButton/UiButton";
-import { UiInputDocument } from "../../../../../shared/ui/UiButton/UiInputDocument/UiInputDocument";
+import { UiInputDocument } from "../../../../../shared/ui/UiInputDocument/UiInputDocument";
 import styles from "./DocumentForm.module.scss";
 
 interface IProps extends React.HTMLAttributes<HTMLFormElement> {

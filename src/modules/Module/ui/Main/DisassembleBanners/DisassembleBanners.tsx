@@ -2,7 +2,7 @@ import { ArrowRightIcon } from "../ArrowRightIcon";
 import { PhoneIcon } from "../PhoneIcon";
 import styles from "./DisassembleBanners.module.scss";
 import Phone from "./assets/backgroundWithBrokenPhone.png";
-import { UiLink } from "../../../../../shared/ui/UiButton/UiLink/UiLink";
+import { UiLink } from "../../../../../shared/ui/UiLink/UiLink";
 
 const DisassembleBanners = () => {
   return (

@@ -8,6 +8,9 @@
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
+  @media screen and (max-width: 1200px) {
+    height: 54px;
+  }
 }
 .contained {
   background: linear-gradient(119deg, #ff6709 0%, #fd5e1a 100%);

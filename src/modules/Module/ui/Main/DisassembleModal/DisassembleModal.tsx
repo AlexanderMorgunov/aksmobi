@@ -5,7 +5,7 @@ import { UiCheckbox } from "../../../../../shared/ui/UiCheckbox/UiCheckbox";
 import { UiButton } from "../../../../../shared/ui/UiButton/UiButton";
 import styles from "./DisassembleModal.module.scss";
 import { UiSelect } from "../../../../../shared/ui/UiSelect/UiSelect";
-import { ISelectOptions } from "../../../../../shared/types/IselectOptions";
+import { ISelectOptions } from "../../../../../shared/types/ISelectOptions";
 
 interface IProps {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;

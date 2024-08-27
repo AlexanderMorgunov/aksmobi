@@ -20,8 +20,8 @@ const ArrowRightSmallIcon = () => {
           y2="8.24899"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF6709" />
-          <stop offset="1" stop-color="#FD5E1A" />
+          <stop stopColor="#FF6709" />
+          <stop offset="1" stopColor="#FD5E1A" />
         </linearGradient>
       </defs>
     </svg>

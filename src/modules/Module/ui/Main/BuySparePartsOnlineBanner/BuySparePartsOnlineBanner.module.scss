@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 1170px;
+  max-width: 90vw;
   height: 190px;
   border-radius: var(--borderRadius);
   display: grid;
@@ -16,10 +17,20 @@
     color: #fff;
     font-size: 24px;
     font-weight: 700;
+    @media screen and (max-width: 1200px) {
+      font-size: 14px;
+    }
   }
   .BuySparePartsOnlineBanner-description {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
+    @media screen and (max-width: 1200px) {
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 35px 20px;
   }
 }

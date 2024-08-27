@@ -1,5 +1,8 @@
+import { useIsMobile } from "../../../../shared/hooks/useIsMobile";
+
 const ArrowRightIcon = () => {
-  return (
+  const { isMobile } = useIsMobile();
+  return !isMobile ? (
     <svg
       width="58"
       height="12"
@@ -20,8 +23,34 @@ const ArrowRightIcon = () => {
           y2="8.76984"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF6709" />
-          <stop offset="1" stop-color="#FD5E1A" />
+          <stop stopColor="#FF6709" />
+          <stop offset="1" stopColor="#FD5E1A" />
+        </linearGradient>
+      </defs>
+    </svg>
+  ) : (
+    <svg
+      width="36"
+      height="8"
+      viewBox="0 0 36 8"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M35.8594 4.35355C36.0547 4.15829 36.0547 3.84171 35.8594 3.64645L32.6774 0.464466C32.4822 0.269204 32.1656 0.269204 31.9703 0.464466C31.7751 0.659728 31.7751 0.976311 31.9703 1.17157L34.7988 4L31.9703 6.82843C31.7751 7.02369 31.7751 7.34027 31.9703 7.53553C32.1656 7.7308 32.4822 7.7308 32.6774 7.53553L35.8594 4.35355ZM0.505859 4.5H35.5059V3.5H0.505859V4.5Z"
+        fill="url(#paint0_linear_1_9891)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_1_9891"
+          x1="0.505859"
+          y1="4"
+          x2="0.64591"
+          y2="6.76543"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#FF6709" />
+          <stop offset="1" stopColor="#FD5E1A" />
         </linearGradient>
       </defs>
     </svg>

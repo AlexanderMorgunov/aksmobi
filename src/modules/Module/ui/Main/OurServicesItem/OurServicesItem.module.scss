@@ -27,6 +27,9 @@
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
+    @media screen and (max-width: 1200px) {
+      font-size: 12px;
+    }
   }
   .OurServicesItem-info {
     width: 100%;
@@ -38,11 +41,20 @@
       font-family: Montserrat;
       font-size: 16px;
       font-weight: 700;
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+      }
     }
     > .OurServicesItem-price {
       font-family: Montserrat;
       font-size: 16px;
       font-weight: 700;
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+      }
     }
+  }
+  @media screen and (max-width: 1200px) {
+    width: 90%;
   }
 }

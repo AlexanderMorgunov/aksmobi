@@ -1,6 +1,7 @@
 @import "../../../shared/constants.scss";
 .UiFormModal {
   width: 470px;
+  max-width: 90vw;
   .UiFormModal-heder {
     height: 136px;
     border-radius: 15px 15px 0px 0px;
@@ -20,6 +21,11 @@
       text-align: center;
       font-size: 24px;
       font-weight: 600;
+      @media screen and (max-width: 1200px) {
+        width: auto;
+        height: auto;
+        font-size: 18px;
+      }
     }
     .UiFormModal-heder-cross {
       background-color: transparent;

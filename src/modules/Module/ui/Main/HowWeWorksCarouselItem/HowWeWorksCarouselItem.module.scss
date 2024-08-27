@@ -49,9 +49,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // color: var(--gray);
-    // &_active {
-    //   color: var(--primaryColor);
-    // }
+    @media screen and (max-width: 1200px) {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    width: 246px;
+    height: 314px;
   }
 }

@@ -15,16 +15,40 @@
     padding-top: 27px;
     padding-bottom: 67px;
     display: grid;
+    .footer-line {
+      width: 100%;
+      background: #1c1c1d;
+      height: 1px;
+    }
     grid-template-columns: 264px 380px 1fr 230px;
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 20px;
+    }
   }
   .logo {
     padding-top: 5px;
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      > img {
+        width: 50%;
+      }
+    }
   }
   .button-wrapper {
     width: 230px;
     > .footer-btn {
       border: 2px solid #fff;
       color: #fff;
+      font-size: 12px;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
   ul {
@@ -41,11 +65,15 @@
         text-decoration: underline;
       }
     }
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
   }
   .phone-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     .phone {
       text-decoration: none;
       font-weight: bold;
@@ -54,16 +82,31 @@
       &:hover {
         text-decoration: underline;
       }
+      @media screen and (max-width: 1200px) {
+        font-size: 14px;
+      }
     }
+  }
+  @media screen and (max-width: 1200px) {
+    height: 100%;
+    align-items: center;
   }
 }
 .copyright-wrapper {
   margin-top: 19px;
   width: var(--containerWidth);
+  max-width: 98vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: var(--gray);
   font-size: 12px;
   font-weight: 400;
+  @media screen and (max-width: 1200px) {
+    font-size: 10px;
+    text-align: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 15px;
+  }
 }

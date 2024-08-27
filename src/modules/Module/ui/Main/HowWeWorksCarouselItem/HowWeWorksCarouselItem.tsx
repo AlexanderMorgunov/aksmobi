@@ -34,15 +34,7 @@ const HowWeWorksCarouselItem: FC<IProps> = ({
       <div className={styles["HowWeWorksCarouselItem-image-container"]}>
         {image}
       </div>
-      <div
-        // className={clsx(
-        //   {
-        //     false: styles["HowWeWorksCarouselItem-description"],
-        //     true: styles["HowWeWorksCarouselItem-description_active"],
-        //   }[`${isActive}`]
-        // )}
-        className={styles["HowWeWorksCarouselItem-description"]}
-      >
+      <div className={styles["HowWeWorksCarouselItem-description"]}>
         {description}
       </div>
     </div>

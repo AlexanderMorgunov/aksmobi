@@ -12,6 +12,10 @@
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0.6px;
+    @media screen and (max-width: 1200px) {
+      font-size: 10px;
+      gap: 10px;
+    }
   }
   .UiInputModal {
     width: 100%;
@@ -22,8 +26,6 @@
     > input {
       width: 100%;
       color: var(--gray);
-      // height: 23px;
-      // color: #fff;
       font-size: 16px;
       font-weight: 400;
       line-height: 14px;
@@ -36,6 +38,13 @@
         color: #fff;
         border-bottom: 1px solid var(--primaryColor);
       }
+      @media screen and (max-width: 1200px) {
+        font-size: 12px;
+        line-height: 10px;
+      }
     }
+  }
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 10px;
   }
 }

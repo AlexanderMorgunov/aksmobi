@@ -19,8 +19,6 @@ const OurServicesList: FC<IProps> = ({
 }) => {
   const [isOpenConfimationModal, setIsOpenConfirmationModal] = useState(false);
 
-  console.log(isOpenModal);
-
   const handleSubmit = () => {
     setIsOpenModal(false);
     console.log("submit");

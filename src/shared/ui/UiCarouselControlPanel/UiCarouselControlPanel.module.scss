@@ -1,0 +1,28 @@
+@import url("../../constants.scss");
+
+.UiCarouselControlPanel-wrapper {
+  width: 170px;
+  height: 26px;
+  border-radius: var(--borderRadius);
+  background: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  .UiCarouselControlPanel-arrow-left {
+    cursor: pointer;
+  }
+  .UiCarouselControlPanel-arrow-right {
+    cursor: pointer;
+  }
+  .UiCarouselControlPanel-page {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    .UiCarouselControlPanel-page-current {
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}

@@ -1,8 +1,10 @@
+import { useIsMobile } from "../../../../../shared/hooks/useIsMobile";
 import { UiLink } from "../../../../../shared/ui/UiLink/UiLink";
 import { ArrowRightIcon } from "../ArrowRightIcon";
 import styles from "./BuySparePartsOnlineBanner.module.scss";
 
 const BuySparePartsOnlineBanner = () => {
+  const { isMobile } = useIsMobile();
   return (
     <div className={styles["BuySparePartsOnlineBanner"]}>
       <div className={styles["BuySparePartsOnlineBanner-title"]}>
@@ -12,7 +14,7 @@ const BuySparePartsOnlineBanner = () => {
         Комплектующие на различные девайсы прямо со склада
       </div>
       <UiLink href="#">
-        Посмотреть
+        {!isMobile ? "Посмотреть" : "Разобрать на запчасти"}
         <ArrowRightIcon />
       </UiLink>
     </div>

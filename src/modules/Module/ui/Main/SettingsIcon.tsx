@@ -10,7 +10,6 @@ const SettingsIcon: FC<IProps> = ({ isActive }) => {
       width="45"
       height="45"
       viewBox="0 0 45 45"
-      //   fill="none"
       fill={isActive ? "#fd5e1a" : "#BDBDBD"}
       xmlns="http://www.w3.org/2000/svg"
     >

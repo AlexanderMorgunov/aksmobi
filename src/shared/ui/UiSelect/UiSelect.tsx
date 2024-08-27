@@ -1,6 +1,6 @@
 import React, { FC, useId } from "react";
 import styles from "./UiSelect.module.scss";
-import { ISelectOptions } from "../../types/IselectOptions";
+import { ISelectOptions } from "../../../shared/types/ISelectOptions";
 
 interface IProps {
   label: string;

@@ -2,14 +2,17 @@ import { ArrowRightIcon } from "../ArrowRightIcon";
 import { PhoneIcon } from "../PhoneIcon";
 import styles from "./DisassembleBanners.module.scss";
 import Phone from "./assets/backgroundWithBrokenPhone.png";
+import PhoneMobile from "./assets/backgroundWithBrokenPhone-mobile.png";
 import { UiLink } from "../../../../../shared/ui/UiLink/UiLink";
 import { useState } from "react";
 import { DisassembleModal } from "../DisassembleModal/DisassembleModal";
 import { ConfirmationModal } from "../ConfirmationModal/ConfirmationModal";
+import { useIsMobile } from "../../../../../shared/hooks/useIsMobile";
 
 const DisassembleBanners = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [isOpenConfimationModal, setIsOpenConfirmationModal] = useState(false);
+  const { isMobile } = useIsMobile();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -32,7 +35,8 @@ const DisassembleBanners = () => {
             className={styles["DisassembleBanner-link-IntoSpareParts"]}
             onClick={() => setIsOpenModal(true)}
           >
-            <span>Разобрать на запчасти</span> <ArrowRightIcon />
+            {!isMobile ? "Разобрать на запчасти" : "Посмотреть"}{" "}
+            <ArrowRightIcon />
           </UiLink>
           <div className={styles["info"]}></div>
         </div>
@@ -47,11 +51,11 @@ const DisassembleBanners = () => {
               className={styles["DisassembleBanner-link-SeePrices"]}
             >
               <PhoneIcon />
-              <span>89610988111</span>
+              89610988111
             </UiLink>
           </div>
           <div className={styles["imageContainer"]}>
-            <img src={Phone} alt="Phone" />
+            <img src={!isMobile ? Phone : PhoneMobile} alt="Phone" />
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@
 .OurServices-external-wrapper {
   margin-top: 101px;
   width: var(--containerWidth);
+  max-width: 98vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,6 +11,9 @@
     color: #fff;
     font-size: 46px;
     font-weight: 700;
+    @media screen and (max-width: 1200px) {
+      font-size: 20px;
+    }
   }
   .OurServices-description {
     margin-top: 20px;
@@ -19,16 +23,26 @@
     color: #fff;
     width: 972px;
     margin-left: 56px;
-
-    // width: 332px;
+    @media screen and (max-width: 1200px) {
+      font-size: 14px;
+      width: 280px;
+      margin: 10px 0px;
+    }
   }
   .OurServices-wrapper {
     margin-top: 52px;
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     width: var(--containerWidth);
+    max-width: 98vw;
     flex-wrap: wrap;
     gap: 30px;
+    @media screen and (max-width: 1200px) {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    margin-top: 20px;
   }
 }

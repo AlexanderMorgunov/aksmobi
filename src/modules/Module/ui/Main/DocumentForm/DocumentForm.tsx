@@ -4,7 +4,7 @@ import { UiInputDocument } from "../../../../../shared/ui/UiInputDocument/UiInpu
 import styles from "./DocumentForm.module.scss";
 
 interface IProps extends React.HTMLAttributes<HTMLFormElement> {
-  title: string;
+  title: string | React.ReactNode;
   description: string | React.ReactNode;
 }
 
@@ -14,18 +14,8 @@ const DocumentForm: FC<IProps> = ({ title, description, ...props }) => {
 
   return (
     <div className={styles["DocumentForm-wrapper"]}>
-      <div className={styles["DocumentForm-title"]}>
-        {/* Заберем ваш сломанный смартфон прямо из дома */}
-        {title}
-      </div>
-      <div className={styles["DocumentForm-description"]}>
-        {description}
-        {/* Оставьте Ваш номер телефона и мы перезвоним Вам{" "}
-        <span className={styles["DocumentForm-description-bold"]}>
-          прямо сейчас
-        </span>
-        . */}
-      </div>
+      <div className={styles["DocumentForm-title"]}>{title}</div>
+      <div className={styles["DocumentForm-description"]}>{description}</div>
       <form action="#" {...props}>
         <UiInputDocument
           placeholder="Имя"

@@ -2,6 +2,7 @@
 
 .ChoseModelList-external-wrapper {
   width: var(--containerWidth);
+  max-width: 98vw;
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -11,6 +12,9 @@
     text-align: center;
     font-size: 46px;
     font-weight: 700;
+    @media screen and (max-width: 1200px) {
+      font-size: 20px;
+    }
   }
   .ChoseModelList-title {
     margin-top: 20px;
@@ -18,6 +22,12 @@
     font-weight: 400;
     text-align: end;
     width: 332px;
+    @media screen and (max-width: 1200px) {
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
   }
   .ChoseModelList-wrapper {
     margin-top: 52px;
@@ -25,8 +35,13 @@
     flex-direction: row;
     justify-content: space-between;
     width: var(--containerWidth);
+    max-width: 98vw;
     flex-wrap: wrap;
     gap: 29px;
+    @media screen and (max-width: 1200px) {
+      margin-top: 10px;
+      justify-content: center;
+    }
   }
   .btn-container {
     margin-top: 50px;

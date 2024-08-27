@@ -2,21 +2,34 @@
 
 .HowWeWorks-external-wrapper {
   width: var(--containerWidth);
+  max-width: 98vw;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 102px;
   gap: 52px;
   margin-left: 10px;
+  @media screen and (max-width: 1200px) {
+    justify-content: flex-start;
+  }
   .HowWeWorks-title {
     color: #fff;
     font-size: 46px;
     font-weight: 700;
+    @media screen and (max-width: 1200px) {
+      font-size: 20px;
+    }
   }
   .HowWeWorks-carousel {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    @media screen and (max-width: 1200px) {
+      gap: 20px;
+      justify-content: start;
+      padding: 0 15px;
+    }
   }
 }

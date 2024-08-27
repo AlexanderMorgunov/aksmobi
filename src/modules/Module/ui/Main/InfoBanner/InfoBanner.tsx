@@ -1,11 +1,13 @@
 import { FC } from "react";
 import styles from "./InfoBanner.module.scss";
+import { useIsMobile } from "../../../../../shared/hooks/useIsMobile";
 
 interface IProps {
   repairPhonesNumber: number | string;
 }
 
 const InfoBanner: FC<IProps> = ({ repairPhonesNumber }) => {
+  const { isMobile } = useIsMobile();
   return (
     <div className={styles["InfoBanner-external-wrapper"]}>
       <div className={styles["InfoBanner-wrapper"]}>
@@ -35,6 +37,9 @@ const InfoBanner: FC<IProps> = ({ repairPhonesNumber }) => {
             СМАРТФОНОВ HUAWEI ОТРЕМОНТИРОВАНО
           </div>
         </div>
+        {isMobile && (
+          <div className={styles["InfoBanner-title_mobile"]}>Статистика</div>
+        )}
       </div>
     </div>
   );

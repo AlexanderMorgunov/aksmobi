@@ -24,10 +24,25 @@
       color: var(--primaryColor);
       transition: var(--transition);
     }
+    @media screen and (max-width: 1200px) {
+      font-size: 12px;
+    }
   }
   .ChoseModeItem-image {
     width: 100%;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 1200px) {
+      > img {
+        width: 130px;
+        height: 91px;
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    width: 130px;
+    height: 166px;
+    padding: 10px 0px;
+    overflow: hidden;
   }
 }

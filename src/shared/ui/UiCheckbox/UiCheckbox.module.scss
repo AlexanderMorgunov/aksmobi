@@ -14,6 +14,9 @@
     letter-spacing: 0.6px;
     opacity: 0.7;
     text-decoration-line: underline;
+    @media screen and (max-width: 1200px) {
+      max-width: 210px;
+    }
   }
 }
 
@@ -43,6 +46,6 @@ input[type="checkbox"]:checked + .checkbox::after {
   transform: translate(-50%, -50%);
   width: 10px;
   height: 7px;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.20652 0.981044C9.38958 1.1641 9.38958 1.4609 9.20652 1.64396L4.05027 6.80021C3.86721 6.98326 3.57041 6.98326 3.38735 6.80021L1.0436 4.45646C0.860546 4.2734 0.860546 3.9766 1.0436 3.79354C1.22666 3.61049 1.52346 3.61049 1.70652 3.79354L3.71881 5.80584L8.54361 0.981044C8.72666 0.797985 9.02346 0.797985 9.20652 0.981044Z" fill="%23FF6709"/><defs><linearGradient id="paint0_linear_2739_17" x1="0.906311" y1="0.84375" x2="9.10258" y2="7.24631" gradientUnits="userSpaceOnUse"><stop stop-color="%23FF6709"/><stop offset="1" stop-color="%23FD5E1A"/></linearGradient></defs></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.20652 0.981044C9.38958 1.1641 9.38958 1.4609 9.20652 1.64396L4.05027 6.80021C3.86721 6.98326 3.57041 6.98326 3.38735 6.80021L1.0436 4.45646C0.860546 4.2734 0.860546 3.9766 1.0436 3.79354C1.22666 3.61049 1.52346 3.61049 1.70652 3.79354L3.71881 5.80584L8.54361 0.981044C8.72666 0.797985 9.02346 0.797985 9.20652 0.981044Z" fill="%23FF6709"/><defs><linearGradient id="paint0_linear_2739_17" x1="0.906311" y1="0.84375" x2="9.10258" y2="7.24631" gradientUnits="userSpaceOnUse"><stop stopColor="%23FF6709"/><stop offset="1" stopColor="%23FD5E1A"/></linearGradient></defs></svg>');
   background-size: cover;
 }

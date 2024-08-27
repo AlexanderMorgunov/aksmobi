@@ -180,7 +180,7 @@ with new parts"
       <BuySparePartsOnlineBanner />
       <InfoBanner repairPhonesNumber={1500} />
       <DocumentForm
-        title={
+        docTitle={
           <span>
             Заберем ваш сломанный смартфон <br />
             прямо из дома
@@ -195,7 +195,7 @@ with new parts"
       />
       <ReviewsList />
       <DocumentForm
-        title="Нужна консультация?"
+        docTitle="Нужна консультация?"
         description="Оставьте Ваш номер телефона и запишем вас на бесплатную консультацию."
       />
       <Disclaimer />

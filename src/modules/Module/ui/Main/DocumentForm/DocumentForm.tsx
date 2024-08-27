@@ -4,11 +4,15 @@ import { UiInputDocument } from "../../../../../shared/ui/UiInputDocument/UiInpu
 import styles from "./DocumentForm.module.scss";
 
 interface IProps extends React.HTMLAttributes<HTMLFormElement> {
-  title: string | React.ReactNode;
+  docTitle: string | React.ReactNode;
   description: string | React.ReactNode;
 }
 
-const DocumentForm: FC<IProps> = ({ title, description, ...props }) => {
+const DocumentForm: FC<IProps> = ({
+  docTitle: title,
+  description,
+  ...props
+}) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
 

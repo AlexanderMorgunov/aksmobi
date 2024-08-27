@@ -1,4 +1,4 @@
-import React, { FC, useId } from "react";
+import { FC, useId } from "react";
 import styles from "./UiSelect.module.scss";
 import { ISelectOptions } from "../../../shared/types/ISelectOptions";
 
